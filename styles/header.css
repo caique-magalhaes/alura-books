@@ -1,0 +1,53 @@
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.cabecalho{
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Position Relativa - para parent que possabilitando seu filha use um absolute que siga a sua posicao*/
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container__imagem{
+    padding: 1em;
+}
+.lista__menu{
+    display: none;
+    width: 60vw;
+}
+.container__botao:checked~.lista__menu{
+    display: block;
+    /*Sera absoluto para que siga na posicao de seu parent fora do fluxo normal - possibilitando o uso do top/bottom/left/right*/
+    position: absolute;
+    top: 100%; /*com seu top em relacao ao parent*/
+}
+.lista__menu__item,.lista__menu__titulo{
+    padding: 1em;
+    background-color: var(--cor-branco);
+    
+}
+.lista__menu__titulo{
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+.lista__menu__link{
+    background: var(--cor-item-menu);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.container__botao{
+    display: none;
+}
