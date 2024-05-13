@@ -1,8 +1,18 @@
+/*importacao de um outro css melhor e mais rapido aqui do que no html*/
+/*os dois ponts sao necessarios para encontrar a past procurada*/
+@import url("../styles/header.css");
+
 :root{
     --cor-de-fundo: #EBECEE;
+    --cor-branco: #FFFFFF;
+    --cor-destaque: #EB9B00;
+    --cor-item-menu: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins", sans-serif;
 }
 
 body{
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
     font-size: 16px;
 }
