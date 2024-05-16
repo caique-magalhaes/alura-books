@@ -1,6 +1,8 @@
 /*importacao de um outro css melhor e mais rapido aqui do que no html*/
 /*os dois ponts sao necessarios para encontrar a past procurada*/
 @import url("../styles/header.css");
+@import url("../styles/banner.css");
+@import url("../styles/carrossel.css");
 
 :root{
     --cor-de-fundo: #EBECEE;
