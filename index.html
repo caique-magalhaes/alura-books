@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
@@ -33,7 +34,49 @@
                 <a href="#"><img src="images/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
                 <a href="#"><img src="images/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
             </div>
-            
         </header>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrosel">
+            <h2 class="carrossel__titulo">Ultimos Lancamentos</h2>
+            <!-- Slider main container -->
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./images/ApacheKafka.svg" alt="livro sobre kafka da alura books"></div>
+                <div class="swiper-slide"><img src="./images/Liderança.svg" alt="lideranca de design livro alura book"></div>
+                <div class="swiper-slide"><img src="./images/Javascript.svg" alt="livro de Javascript na alura books"></div>
+                <div class="swiper-slide"><img src="./images/Guia Front-end.svg" alt="livro guia de front-end na alura books"></div>
+                <div class="swiper-slide"><img src="./images/Portugol.svg" alt="livro de Portugol"></div>
+                <div class="swiper-slide"><img src="./images/Acessibilidade.svg" alt="livro de Acessiblidade"></div>
+                </div>
+                <!-- If we need pagination -->
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                },
+            });
+          
+        </script>
     </body>
 </html>
