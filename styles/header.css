@@ -94,6 +94,9 @@
     .lista__menu__item:hover > .lista__menu__link{
         -webkit-text-fill-color: var(--cor-branco);
     }
+    .opcoes__item:hover{
+        cursor: pointer;
+    }
     .opcoes__item__link{
         text-decoration: none;
         color: var(--cor-azul);
